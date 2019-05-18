@@ -5,91 +5,44 @@
 
 body {
   width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  /*font-family: 'Open Sans Condensed', sans-serif;*/
-  font-family: 'Montserrat', sans-serif;
-}
-
-.border {
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: 20px solid yellow;
-  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 
-/* Create two equal columns that floats next to each other */
-.inside {
+
+
+.container {
   float: left;
   width: 100%;
   padding-top: 50px;
   text-align:center;
-/*  margin-right: 1%;*/
   height: 100vh;
-  /*background: linear-gradient(5deg, #ffec60, #fffef7);*/
 
 }
-
-.inside2 {
-  float: left;
-  width: 100%;
-  padding-top: 50px;
-  text-align:center;
-/*  margin-right: 1%;*/
-  height: 100%;
-  /*background: linear-gradient(5deg, #ffec60, #fffef7);*/
-
-}
-
-/*.column2 {
-  float: left;
-  width: 79%;
-  padding: 10px;
-  height: 100%;
-}*/
-/* Clear floats after the columns */
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 
 .title {
-  margin-top:2.5%;
-  margin-left: 15%;
-  margin-right:15%;
-  margin-bottom: 0%;
+  margin: 0 auto;
   position: relative;
-  font-weight: 200;
+  font-weight: 700;
   font-style: normal;
-  font-size: 30pt;
-  color: gray;
+  font-size: 40pt;
+  color: black;
 }
 
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  left: 80%;
-  top: 15%;
-  font-size: 20px;
-  padding-right: 30%;
-  width: 50%;
-  height: 100%; /* Full height */
-  position: absolute; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  margin-left: -2.5%;
+  position: relative;
+  font-size: 10pt;
+  color: black;
 }
 li {
   display: inline;
+  margin: 1%;  
 }
 
 a.nb:link {
@@ -103,8 +56,8 @@ a.nb:visited {
 }
 
 a.nb:hover {
-  text-decoration: none;
-  color: red;
+  text-decoration: line-through;
+  color: black;
 }
 
 a.nb:active {
@@ -126,62 +79,55 @@ a.nb:active {
 
 @media screen and (max-width: 600px) {
   .navigationbar {
-    font-size: 15pt;
+    font-size: 10pt;
   }
 }
 
 
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
 .row {
-  /*margin: 8px -16px;*/
-  margin-top:2.5%;
-  margin-left: 20%;
-  margin-right:20%;
+  margin-top:1%;
+  margin-left: 5%;
+  margin-right:5%;
   margin-bottom: 0%;
   position: relative;
 }
 
-/* Add padding BETWEEN each column */
 .row,
 .row > .column {
   padding: 8px;
 }
 
-/* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 25%;
 }
 
-/* Clear floats after rows */ 
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .content {
-  /*background-color: white;*/
-  padding: 10px;
+ padding: 10px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
   }
+  .content{
+    width: 50%;
+  }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 500px) {
   .column {
+    width: 100%;
+  }
+  .content {
     width: 100%;
   }
 }
@@ -192,45 +138,102 @@ a.nb:active {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .title {
     width: 100%;
   }
 }
+
+
+
+/*.weeks{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5%;
+  height:100%;
+  text-align: left;
+  font-size: 11pt;
+}*/
+
+.grey {
+  color: grey;
+}
+
+.weeks {
+  margin-top:1%;
+  margin-left: 5%;
+  margin-right:5%;
+  margin-bottom: 3%;
+  position: relative;
+  text-align: left;
+}
+
+
+
+.briefdes {
+  margin-top:5%;
+  margin-left: 20%;
+  margin-right:20%;
+  margin-bottom: 5%;
+  position: relative;
+  text-align: left;
+  font-size: 12pt;
+}
+
+
+
+.bodytext {
+  margin-top:1%;
+  margin-left: 20%;
+  margin-right:20%;
+  margin-bottom: 3%;
+  position: relative;
+  text-align: left;
+  font-size: 10pt;
+  color: grey;
+}
+
+.black{
+  color: black;
+}
+
 
 .footer{
-  margin-top: 2.5%;
-  margin-bottom: 5%;
+
+  margin-top: 1%;
   font-weight: 400;
   font-style: normal;
-  font-size: 11pt;
+  font-size: 10pt;
+    margin-left: 5%;
+  margin-right:5%;
+  position: relative;
 }
 
-.assignment1{
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 5%;
-  height:100%;
-  text-align: left;
-  font-size: 11pt;
+
+
+
+a:link {
+  color: black;
+  text-decoration: none;
 }
 
-.assignment2{
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 5%;
-  height:100%;
-  text-align: left;
-  font-size: 11pt;
+a:visited {
+  color: black;
 }
 
-.assignment3{
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 5%;
-  height:100%;
-  text-align: left;
-  font-size: 11pt;
+
+a:hover {
+  color: black;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: line-through;
 }
+
+
+a:active {
+  color: red;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
